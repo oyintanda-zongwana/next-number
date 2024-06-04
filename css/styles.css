@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+#numberDisplay {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+#nextButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}

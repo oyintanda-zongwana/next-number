@@ -6,15 +6,18 @@ if (savedIndex !== null) {
 } 
 
 function count(array) {
+    const displayElement = document.getElementById('numberDisplay');
     if (index < array.length) {
-        console.log(array[index]);  
+        displayElement.innerText = array[index];
         index++;
         localStorage.setItem('index', index);  
     } else {
-        console.log("All numbers have been printed.");
+        displayElement.innerText = "All numbers have been printed.";
         localStorage.removeItem('index');  // Reset when all numbers have been printed
     }
 }
 
-count(num);
+document.getElementById('nextButton').addEventListener('click', () => {
+    count(num);
+});
 
